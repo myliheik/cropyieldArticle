@@ -2,7 +2,7 @@
 
 """
 
-PathFinder creates paths to all files between start- and enddate 
+EODIE PathFinder creates paths to all files between start- and enddate 
 
 """
 import os
