@@ -15,7 +15,7 @@ RUN:
 
 python 06-median2stack.py -i median_test1110_2016 -o medianStack -f test1110_2016.pkl -t TEMPDIRPATH
 
-After this into stack2ARD.py.
+After this into 07-stack2ARD.py.
 
 """
 
