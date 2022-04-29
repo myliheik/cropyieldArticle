@@ -1,5 +1,5 @@
 """
-1.12.2021 vain bin mÃ¤Ã¤rÃ¤Ã muutettu, muuten sama kuin 07-stack2ARD.py
+1.12.2021 
 
 Combine annual stack-files into one array stack.
 
@@ -9,14 +9,9 @@ reshapeAndSave() pivots the dataframe by farmID and doy, converts to numpy array
 
 RUN: 
 
-python 07-medianstack2ARD.py -i /Users/myliheik/Documents/myCROPYIELD/medianStack_annual -o /Users/myliheik/Documents/myCROPYIELD/medianStack/ -f 1400 -y 2018 2019
+python 07-medianstack2ARD.py -i medianStack_annual -o medianStack/ -f 1400 -y 2018 2019
 
-# with 'time series by rank':
-python 07-medianstack2ARD.py -i /Users/myliheik/Documents/myCROPYIELD/scratch/project_2001253/cropyieldII/cloudy/medianStack_annual -o /Users/myliheik/Documents/myCROPYIELD/scratch/project_2001253/cropyieldII/cloudy/medianStackRank -f 1120 -y 2020 -r
-
-After this into 08-mergeTarget.py and 09-runNN.py.
-
-In Puhti: module load geopandas (Python 3.8.) and also: pip install 'pandas==1.1.2' --user
+After this into 08-mergeTarget.py.
 
 """
 import glob
