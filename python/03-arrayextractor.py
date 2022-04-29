@@ -1,5 +1,5 @@
 """
-Originally Samantha Wittke in 2020
+Originally Samantha Wittke in 2020 for EODIE.
 
 Modified by Maria Yli-Heikkila, Markku Luotamo
 
