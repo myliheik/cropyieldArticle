@@ -13,11 +13,9 @@ testing(outputfile) tests if output file is ok.
 
 RUN: 
 
-python 06-median2stack.py -i /Users/myliheik/Documents/myCROPYIELD/scratch/project_2001253/median_test1110_2016 -o /Users/myliheik/Documents/myCROPYIELD/medianStack -f test1110_2016.pkl -t TEMPDIRPATH
+python 06-median2stack.py -i median_test1110_2016 -o medianStack -f test1110_2016.pkl -t TEMPDIRPATH
 
 After this into stack2ARD.py.
-
-In Puhti: module load geopandas (Python 3.8.) and also: pip install 'pandas==1.1.2' --user
 
 """
 
