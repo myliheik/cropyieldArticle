@@ -9,11 +9,7 @@ Modified by Maria Yli-Heikkila, Markku Luotamo
 2021-09-24 MY changed to save csv in UNIX format, not DOS; not saving empty files anymore
 
 USAGE:
-python /scratch/project_2001253/cropyield2020/python/03-arrayextractor.py -f $name -shp $shppath -p $projectpath -jn ${ID} -id $idname -r 10 -t $TEMPDIRPATH
-
-or if with sbatch_commandlist:
-python /scratch/project_2001253/cropyield2020/python/03-arrayextractor.py -f $name -shp $shppath -p $projectpath -jn ${ID} -id $idname -r 10 -t \$LOCAL_SCRATCH
-
+python 03-arrayextractor.py -f $name -shp $shppath -p $projectpath -jn ${ID} -id $idname -r 10 -t $TEMPDIRPATH
 
 WHERE:
 -f: raster file path
@@ -24,13 +20,6 @@ WHERE:
 -r: for multi-band operation you must specify a common target resolution (e.g. 10)
 -t: temporary directory path
 
-Generate commands with puhti_generate_commandlist.sh:
-sh ../bin/puhti_generate_commandlist.sh
-
-Run as array job in Puhti:
-
-module load geoconda
-sbatch_commandlist -commands komennot.txt -t 00:20:00 -mem 1500 --tmp=200
 
 """
 
