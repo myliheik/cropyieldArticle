@@ -2,10 +2,14 @@
 MY 2022-03-19
 
 Flatten observations' temporal dimension: 11-days combined
--> easy fusion with S1 11-day mosaics
 
-RUN: python 04-flatten-temporal.py -i /Users/myliheik/Documents/myCROPYIELD/scratch/project_2001253/cropyieldII/cloudless/results_1110_2018 -o /Users/myliheik/Documents/myCROPYIELD/cropyieldFusion/cloudless/results_1110_2018 \
+RUN: python 04-flatten-temporal.py -i cloudless/results_1110_2018 -o cloudless/results_1110_2018 \
 -c 19
+
+WHERE:
+i: input dir
+o: output dir
+c: Number of cores to use
 
 """
 
