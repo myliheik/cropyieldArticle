@@ -1,19 +1,17 @@
 """
 2021-09-01 MY added normalization
-2021-10-05 MY added naming of testing results directory
-2021-11-30 addeed TCN
 2022-01-02 iterable, returns mean RMSE of ntimes iterated trainings.
 2022-03-05 return also all RMSEs
 
 RUN:
 
 Without testing set (makes train/validation split automatically):
-python 09-runTCN-article-iterate.py -i /Users/myliheik/Documents/myCROPYIELD/scratch/project_2001253/cropyieldIII/cloudless/dataStack/array_1110-2020.npz \
+python 09-runTCN-article-iterate.py -i dataStack/array_1110-2020.npz \
 --epochs 200 --batchsize 128 --learningrate 0.001 --epsilon 0.1
 
 With testing set (region or separate year):
-python 09-runTCN-article-iterate.py -i /Users/myliheik/Documents/myCROPYIELD/scratch/project_2001253/cropyieldIII/cloudless/dataStack/array_1110-2018-2019.npz \
--j /Users/myliheik/Documents/myCROPYIELD/scratch/project_2001253/cropyieldIII/cloudless/dataStack/array_1110-2020.npz \
+python 09-runTCN-article-iterate.py -i dataStack/array_1110-2018-2019.npz \
+-j dataStack/array_1110-2020.npz \
 --epochs 200 --batchsize 128 --learningrate 0.001 --epsilon 0.1
 
 
