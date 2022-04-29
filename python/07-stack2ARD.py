@@ -1,11 +1,6 @@
 """
 
-23.10.2020 
-27.1.2021 updated: replace DOY to order number 1,2,3,4,... during the season. We will need 4 datasets (June, July, August)
-19.8.2021 added options 1) to merge given years and data sets, 2) outputdir
-1.9.2021 saves in compressed numpy file instead of pickle
-15.11.2021 oli törkeä virhe combineAllYears-funktiossa, pitää ajaa uudelleen kaikki
-25.11.2021 oli törkeä virhe reshapeAndSave-funktiossa (pivot, reindex, reshape), pitää ajaa uudelleen kaikki
+MY 23.10.2020 
 
 Combine annual stack-files into one array stack.
 
@@ -15,14 +10,9 @@ reshapeAndSave() pivots the dataframe by farmID and doy, converts to numpy array
 
 RUN: 
 
-python 07-stack2ARD.py -i /Users/myliheik/Documents/myCROPYIELD/dataStack_annual -o /Users/myliheik/Documents/myCROPYIELD/dataStack/ -f 1400 -y 2018 2019
+python 07-stack2ARD.py -i dataStack_annual -o dataStack/ -f 1400 -y 2018 2019
 
-# with 'time series by rank':
-python 07-stack2ARD.py -i /Users/myliheik/Documents/myCROPYIELD/scratch/project_2001253/cropyieldII/cloudy/dataStack_annual -o /Users/myliheik/Documents/myCROPYIELD/scratch/project_2001253/cropyieldII/cloudy/dataStackRank -f 1120 -y 2020 -r
-
-After this into 08-mergeTarget.py and 09-runNN.py.
-
-In Puhti: module load geopandas (Python 3.8.) and also: pip install 'pandas==1.1.2' --user
+After this into 08-mergeTarget.py.
 
 """
 import glob
