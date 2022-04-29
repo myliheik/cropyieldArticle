@@ -6,7 +6,7 @@ Apply to all annual stack-files: add/sum of duplicates per doy, i.e. merge all o
 
 RUN: 
 
-python 07C-doyFusion.py -i /Users/myliheik/Documents/myCROPYIELD/scratch/project_2001253/cropyieldFusion/cloudless/dataStack_annual -o /Users/myliheik/Documents/myCROPYIELD/scratch/project_2001253/cropyieldFusion/cloudless/dataStack_annualFused 
+python 07C-doyFusion.py -i dataStack_annual -o dataStack_annualFused 
 
 Before this 06-histo2stack.py, after this 07-stack2ARD.py.
 
