@@ -4,11 +4,11 @@
 RUN:
 
 Without testing set (makes train/validation split automatically):
-python 09-runRF-article-iterate.py -i /Users/myliheik/Documents/myCROPYIELD/scratch/project_2001253/cropyieldII/cloudy/dataStack/array_1110-2020.npz 
+python 09-runRF-article-iterate.py -i dataStack/array_1110-2020.npz 
 
 With testing set (kunta or separate year):
-python 09-runRF-article-iterate.py -i /Users/myliheik/Documents/myCROPYIELD/scratch/project_2001253/cropyieldIII/cloudless/dataStack/array_1110-2018-2019.npz \
--j /Users/myliheik/Documents/myCROPYIELD/scratch/project_2001253/cropyieldIII/cloudless/dataStack/array_1110-2020.npz 
+python 09-runRF-article-iterate.py -i dataStack/array_1110-2018-2019.npz \
+-j dataStack/array_1110-2020.npz 
 
 
 NOTE: if you test with a separate year, be sure that training set excludes that year!
