@@ -10,11 +10,8 @@ After this run 08-mergeTarget.py.
 
 RUN:
 
-python 08B-mergeObservations-parallel.py -i /Users/myliheik/Documents/myCROPYIELD/scratch/project_2001253/cropyieldArticle/cloudy/dataStack/ -o /Users/myliheik/Documents/myCROPYIELD/scratch/project_2001253/cropyieldKunta/cloudy/dataStack/ \
--k /Users/myliheik/Documents/myCROPYIELD/satotilatkunnittain/satotilalistaJaKunta.csv -c 8
-
-python 08B-mergeObservations-parallel.py -i /Users/myliheik/Documents/myCROPYIELD/scratch/project_2001253/cropyieldArticle/cloudless/dataStack/ -o /Users/myliheik/Documents/myCROPYIELD/scratch/project_2001253/cropyieldKunta/cloudless/dataStack/
--k /Users/myliheik/Documents/myCROPYIELD/satotilatkunnittain/satotilalistaJaKunta.csv -c 8
+python 08B-mergeObservations-parallel.py -i dataStack/ -o dataStack/ \
+-k satotilalistaJaKunta.csv -c 8
 
 """
 
