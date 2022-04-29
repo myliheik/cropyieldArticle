@@ -4,8 +4,8 @@ This repository includes codes for preprocessing the data from Sentinel-2 L2A pr
 
 in python/
 
-01-splitshp-shadow.py: ESRI shapefile for polygons (field parcel) is split into subsets (files) by Sentinel-2 granule boundaries.
-02-pathfinder.py: filepaths to Sentinel-2 bands is searched. Use this if no intentions for cloud-masking.
+- 01-splitshp-shadow.py: ESRI shapefile for polygons (field parcel) is split into subsets (files) by Sentinel-2 granule boundaries.
+- 02-pathfinder.py: filepaths to Sentinel-2 bands is searched. Use this if no intentions for cloud-masking.
 02-safefinder.py: directory paths to Sentinel-2 SAFE directories. Use this if cloud-masking wanted.
 03-arrayextractor.py: extract pixel values from bands by polygons. Cloud-mask used is safe paths given.
 04-flatten-temporal.py: flatten the observations into 11-day temporal composites.
