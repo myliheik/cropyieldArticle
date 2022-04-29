@@ -6,9 +6,7 @@ Apply to all annual stack-files: add/sum of duplicates per doy, i.e. merge all o
 
 RUN: 
 
-python 07C-doyFusion-median.py -i /Users/myliheik/Documents/myCROPYIELD/scratch/project_2001253/cropyieldFusion/cloudless/medianStack_annual -o /Users/myliheik/Documents/myCROPYIELD/scratch/project_2001253/cropyieldFusion/cloudless/medianStack_annualFused 
-
-Before this 06-histo2stack.py, after this 07-stack2ARD.py.
+python 07C-doyFusion-median.py -i cloudless/medianStack_annual -o cloudless/medianStack_annualFused 
 
 """
 import glob
