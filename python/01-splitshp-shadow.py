@@ -3,13 +3,10 @@
 2020-06-01 MY
 
 Usage:
-python splitshp-shadow.py --s2tiles /Users/myliheik/Documents/GISdata/sentinel2-tiles/sentinel2_tiles-over-Finland/suomiTiles.shp \
---fullshapefile shapefile --outshpdir /Users/myliheik/Documents/GISdata/satotutkimus-shpPerTile/ --out_file farmIDtile.tsv
+python splitshp-shadow.py --s2tiles suomiTiles.shp \
+--fullshapefile shapefile --outshpdir satotutkimus-shpPerTile/ --out_file farmIDtile.tsv
 
-Note: this help if GDAL fails: 
-export GDAL_DATA=/Users/myliheik/anaconda3/envs/myGIS/share/gdal
-
-Modified version of Samantha's splitshp.py
+Modified version of EODIE splitshp.py
 
 """
 
