@@ -1,24 +1,11 @@
 """
 20.8.2021 MY 
-1.9.2021 MY reformatted output filename
-14.2.2022 if NA in y, filter out from array, farmID and y.
-15.2.2022 skip remove duplicates when training/testing models.
-16.2. make parallel
 
 Merge farmID with target y. 
 
-Works also if multiple data sets are included in farmID-file.
-
 RUN:
 
-python 08-mergeTarget-parallel.py -i /Users/myliheik/Documents/myCROPYIELD/scratch/project_2001253/cropyieldIII/cloudy/dataStack/ \
--k /Users/myliheik/Documents/myCROPYIELD/referenceCROPYIELD2021/references-all.csv
-
-python 08-mergeTarget-parallel.py -i /Users/myliheik/Documents/myCROPYIELD/scratch/project_2001253/cropyieldKunta/cloudy/dataStack_merged/ \
--k /Users/myliheik/Documents/myCROPYIELD/referenceCROPYIELD2021/references-kunnat.csv
-
-python 08-mergeTarget-parallel.py -i /Users/myliheik/Documents/myCROPYIELD/scratch/project_2001253/cropyieldKunta/cloudless/dataStack_merged/ \
--k /Users/myliheik/Documents/myCROPYIELD/referenceCROPYIELD2021/references-kunnat.csv
+python 08-mergeTarget-parallel.py -i dataStack/ -k references-all.csv
 
 """
 import pandas as pd
