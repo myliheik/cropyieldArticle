@@ -16,11 +16,9 @@ testing(outputfile) tests if output file is ok.
 
 RUN: 
 
-python histo2stack.py -i /Users/myliheik/Documents/myCROPYIELD/scratch/project_2001253/histo_test1110_2016 -n 32 -o /Users/myliheik/Documents/myCROPYIELD/dataStack -f test1110_2016.pkl -t TEMPDIRPATH
+python 06-histo2stack.py -i histo_test1110_2016 -n 32 -o dataStack -f test1110_2016.pkl -t TEMPDIRPATH
 
-After this into stack2ARD.py.
-
-In Puhti: module load geopandas (Python 3.8.) and also: pip install 'pandas==1.1.2' --user
+After this into 07-stack2ARD.py.
 
 """
 
