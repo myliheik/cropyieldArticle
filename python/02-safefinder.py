@@ -2,7 +2,7 @@
 
 safefinder creates paths to all files between start- and enddate 
 
-17.8.2021 MY modified from pathfinder.py to find safe dirs
+17.8.2021 MY modified from EODIE pathfinder.py to find safe dirs.
 
 RUN:
 python safefinder.py -s 20200501 -e 20200905  -d /scratch/project_2002694/safedirs
