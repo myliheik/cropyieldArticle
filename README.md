@@ -1,6 +1,6 @@
 # Scalable crop yield mapping with Sentinel-2 time series and temporal convolutional network (TCN)
 
-This repository includes codes for preprocessing the data from Sentinel-2 L2A product and running the prediction models TCN and random forests.
+This repository includes codes for preprocessing the data from Sentinel-2 L2A product into time series and and ready for the prediction models TCN and random forests (RF).
 
 in python/
 
