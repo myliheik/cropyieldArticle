@@ -8,9 +8,9 @@ Do this before 08-mergeTarget.py.
 
 RUN:
 
-python 08A-removeDuplicates.py -i /Users/myliheik/Documents/myCROPYIELD/scratch/project_2001253/cropyieldKunta/cloudy/dataStack/
+python 08A-removeDuplicates.py -i dataStack/
 
-python 08A-removeDuplicates.py -i /Users/myliheik/Documents/myCROPYIELD/scratch/project_2001253/cropyieldIII/cloudy/dataStack/
+python 08A-removeDuplicates.py -i dataStack/
 
 """
 
