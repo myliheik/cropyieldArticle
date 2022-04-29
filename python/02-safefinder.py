@@ -1,6 +1,6 @@
 """
 
-safefinder creates paths to all files between start- and enddate 
+safefinder.py creates paths to all files between start- and enddate.
 
 17.8.2021 MY modified from EODIE pathfinder.py to find safe dirs.
 
