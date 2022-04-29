@@ -5,13 +5,21 @@
 24.9.2021  changed to_csv to save in UNIX forma (not DOS)
 20.11.2021 removed if below (or over) bin range, set 1st (or last) value 1, others 0. 
 
-From Samatha Wittke's code:
-preparing for ML:
+Based on Samatha Wittke's code histogramize.py for EODIE:
 input array csvs from main program, each line representing one field, first number being ID of the field
 output similar csv with each line representing one field, first number being ID of field, followed by x = bins numbers representing histogram values
 
 
 RUN: python histogramize-shadow.py -i input -o output -b B8A -n nrbins -l 2 -h 2000
+
+WHERE:
+i: input dir
+o: output dir
+b: band ID
+n: number of bins in histogram
+l: lower limit of range in histogram
+h: upper limit of range in histogram
+
 """
 ######################
 
